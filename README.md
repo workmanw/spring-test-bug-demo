@@ -1,6 +1,6 @@
 # README
 
-Demonstration for Spring Test Bug. 
+Demonstration for Spring Test Bug. See: [spring-projects/spring-boot#27143](https://github.com/spring-projects/spring-boot/issues/27143).
 
 ## Reproduction
 
