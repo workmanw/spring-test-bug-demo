@@ -1,10 +1,14 @@
 # README
 
-Demonstration for Spring Test Bug. See: [spring-projects/spring-boot#27143](https://github.com/spring-projects/spring-boot/issues/27143).
+Demonstration for Mac OS Big Sur socket bug. 
+
+- ~[spring-projects/spring-boot#27143](https://github.com/spring-projects/spring-boot/issues/27143)~
+- ~[spring-cloud/spring-cloud-contract#1678](https://github.com/spring-cloud/spring-cloud-contract/issues/1678)~
+- Change introduced by Apple 11.13.1 caused regression in CrowdStrike Falcon. Resulted in larger HTTP requests being corrupted. 
 
 ## Reproduction
 
-Run `mvn clean test` one or more times, and you will see the following exception:
+Run `mvn clean test` one or more times, and you will see the below exception. Alternatively, you can use `run-loop.sh` which will run the test ten times and print the number of failures.
 
 ```shell
 2021-07-02 21:26:49.921  INFO 25652 --- [o-auto-1-exec-1] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
